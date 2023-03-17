@@ -10,3 +10,4 @@ useRef returns a mutable ref object whose .current property is initialized to th
 
 ## extract shared dependencies
 check config in browser network tab
+    shorthand for long list if needed
