@@ -1,14 +1,2 @@
 # how to
-## check improvement
-inspect browser network tab:
-- faker will be loaded once on  localhost:8080
-- fixed async loading issue in isolation from localhost:8081 and  localhost:8082
-- use different dependeny major version (4.x.y & 5.a.b) in subproject
-- - if major version only is the same (5.0.x & 5.1.y), shared dependency will be used
-
-## simulate singleton webpack warning
-- if versions are different, but singleton is used for both subproject, webpack print warning 
-Unsatisfied version -.-.- from products of shared singleton module faker (required ^-.-.-)
-
-## bind subproject coorectly
-need to set id up other than export name    -    because of collision variable name in remoreEntry.js
+## 
