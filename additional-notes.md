@@ -8,3 +8,5 @@ useRef returns a mutable ref object whose .current property is initialized to th
     div ref={ref} will become ref.current
     @version — 16.8.0
 
+## extract shared dependencies
+check config in browser network tab
