@@ -1,5 +1,3 @@
-// remote code
-import 'productsRemote/ProductsIndex';
+import 'products/ProductsIndex';
 
-// local code
 console.log('Container!');
