@@ -9,3 +9,6 @@ inspect browser network tab:
 ## simulate singleton webpack warning
 - if versions are different, but singleton is used for both subproject, webpack print warning 
 Unsatisfied version -.-.- from products of shared singleton module faker (required ^-.-.-)
+
+## bind subproject coorectly
+need to set id up other than export name    -    because of collision variable name in remoreEntry.js
