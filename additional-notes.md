@@ -71,3 +71,19 @@ CI/CD pipeline via github:
     Create Custom Error Response / Create Custom Error Settings / HTTP Response Code = v'200: OK' 
     Create Custom Error Response / Create Custom Error Settings / _click'Create'          (after that new line will be added to the table)
 |General| / Dmain Name = copy-url
+
+- open aws IAM
+_click'Access management/Users'(left menu)
+_click'Add User'
+    Add User / Set user details / User name* = <project-ci-user-name>
+    Add User / Select AWS access type / Access type* = check'Programmatic access'
+    Add User / _click'Next: Permissions'
+    (all bucket & cloudfront permissions is bad practice)
+    Add User / Set permission / _click'Attach existing policies directly'
+    Add User / Filter policies = s3 / check'AmazonS3FullAccess'
+    Add User / Filter policies = cloudfront / check'CloudFrontFullAccess'
+    Add User / _click'Next: Tags'
+    Add User / _click'Next: Review'
+    Add User / _click'Create user'          (after that new line will be added to the table)
+    copy'Access key ID'
+    copy'Secret access key' (hidden, will be shown 1 time. If forgot, re-create user)
