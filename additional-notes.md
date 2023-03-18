@@ -104,3 +104,7 @@ Secrets / _click'New secret'
 |Invalidations| / _click'Create Invalidation'
 Create Invalidation / Object Paths = '/container/latest/index.html'
 Create Invalidation / _click'Invalidate'       (line added. Status=In Progress; wait for Completed)
+
+### automate invalidation
+- add job to deployment config
+invalidation will be added for every deployment
