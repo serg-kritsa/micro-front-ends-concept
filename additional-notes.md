@@ -95,3 +95,12 @@ Secrets / _click'New secret'
     Secrets / New secret / Name = <key-name>
     Secrets / New secret / Value = <key-value>
     Secrets / New secret / _click'Add secret'      (line added)
+
+## fix white page screen
+- make path to js consistent w/ bucket folder structure 
+- add manual cache invalidation
+- - open aws CloudFront
+- - open created distribution
+|Invalidations| / _click'Create Invalidation'
+Create Invalidation / Object Paths = '/container/latest/index.html'
+Create Invalidation / _click'Invalidate'       (line added. Status=In Progress; wait for Completed)
