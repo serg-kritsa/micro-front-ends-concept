@@ -52,3 +52,22 @@ CI/CD pipeline via github:
     copy-generated-policy
     Edit bucket policy/Bucket policy/Policy=_paste-generated-policy
     Edit bucket policy/Bucket policy/_click'Save changes'
+
+- open aws CloudFront
+- CloudFront Distributions/_click'Create Distribution'
+- - Select a delivery method for your content/Web/_click'Get Started'           (step is not present in updated UI)
+    Create Distribution / Origin Settings / Origin Domain Name =v'<bucket-name>'
+    Create Distribution / Default Cache Behavior Settings / Viewer Protocol Policy =_radio'Redirect HTTP to HTTPS'
+    Create Distribution / Distribution Settings / SSL Certificate =_radio'Defauy CloudFront Crtificate (*.cloudfront.net)'
+    Create Distribution / _click'Create Distribution'          (after that new line will be added to the table where Status = In Progress; wait for Deployed)
+- - open created distribution
+|General| / _click'Edit'
+    Edit Distribution / Distribution Settings / Default Root Object = '/container/latest/index.html
+    Edit Distribution / Distribution Settings / _click'Yes, Edit'
+|Error Pages| / _click'Create Custom Error Response'
+    Create Custom Error Response / Create Custom Error Settings / HTTP Error Code = v'403: Forbidden' 
+    Create Custom Error Response / Create Custom Error Settings / Customize Error Response = _radio'Yes' 
+    Create Custom Error Response / Create Custom Error Settings / Response Page Path = '/container/latest/index.html'
+    Create Custom Error Response / Create Custom Error Settings / HTTP Response Code = v'200: OK' 
+    Create Custom Error Response / Create Custom Error Settings / _click'Create'          (after that new line will be added to the table)
+|General| / Dmain Name = copy-url
