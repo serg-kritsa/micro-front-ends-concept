@@ -87,3 +87,11 @@ _click'Add User'
     Add User / _click'Create user'          (after that new line will be added to the table)
     copy'Access key ID'
     copy'Secret access key' (hidden, will be shown 1 time. If forgot, re-create user)
+
+- open github repository
+|Settings| 
+_click'Secrets'(left menu)
+Secrets / _click'New secret'
+    Secrets / New secret / Name = <key-name>
+    Secrets / New secret / Value = <key-value>
+    Secrets / New secret / _click'Add secret'      (line added)
