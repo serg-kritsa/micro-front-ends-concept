@@ -165,5 +165,7 @@ use passed callback function in MemoryHistory navigation listener
 - destruct pathname prop from event
 - rename it for better understanding
 - use browser history object
+- update browser url after subapp naigation |   |   | one direction communication
+
 
 
