@@ -172,6 +172,8 @@ use passed callback function in MemoryHistory navigation listener
 - declare parent navigation callback
 - implement callback
 - use callback on conainer listening event
+- fix update browser url on running in isolation on port 8081: 
+1) setup browser history 
 
 
 
