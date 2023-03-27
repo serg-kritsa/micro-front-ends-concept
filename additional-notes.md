@@ -166,6 +166,8 @@ use passed callback function in MemoryHistory navigation listener
 - rename it for better understanding
 - use browser history object
 - update browser url after subapp naigation |   |   | one direction communication
+- fix onNavigate undefined error on running in isolation on port 8081
+
 
 
 
