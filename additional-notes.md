@@ -122,3 +122,33 @@ Secrets / _click'New secret'
     Secrets / New secret / Value = <key-value>
     Secrets / New secret / _click'Add secret'      (line added)
 
+## merge code changes after code review
+git checkout -b container-dev
+make changes
+git status
+git add .
+git commit -m "Finished eature #1"
+git push origin container-dev
+- - open github repository
+|Pull requests| / _click'New pull request'
+|Code| / Comparing changes / _v'compare: container-dev'      (v'base: master' is autoselected)
+|Code| / Comparing changes / _click'Create pull request'
+|Code| / Open a pull request / _click'Create pull request'
+|Pull requests| / Open a pull request / _click'Create pull request'     (title from commit message / description empty by default)
+- - review changes
+|Pull requests| / <commit-message> #1 / |Files changed| / _click'+' when hovered on line to leave comment (if needed )
+|Pull requests| / <commit-message> #1 / |Files changed| / _click'+' when hovered on line to leave comment (if needed ) 
+|Pull requests| / <commit-message> #1 / |Files changed| / _click'Start a review'
+|Pull requests| / <commit-message> #1 / |Files changed| / _click'Finish your review' / (_radio'Comment' by default) / _click'Submit review'
+- - resolve conversation
+|Pull requests| / <commit-message> #1 / |Conversation|                        (added review shown)
+|Pull requests| / <commit-message> #1 / |Conversation| / _click'Resolve conversation'
+- - merge
+|Pull requests| / <commit-message> #1 / |Conversation| / _click'Merge pull request'
+|Pull requests| / <commit-message> #1 / |Conversation| / _click'Confirm merge'
+|Pull requests| / <commit-message> #1 / |Conversation| / _click'Delete branch' (if needed)
+- - pull merged
+git checkout master
+git pull origin master
+
+
