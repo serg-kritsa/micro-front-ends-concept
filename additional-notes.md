@@ -108,3 +108,17 @@ Create Invalidation / _click'Invalidate'       (line added. Status=In Progress; 
 ### automate invalidation
 - add job to deployment config
 invalidation will be added for every deployment
+
+## add domain name github secret to use it as env variable
+- copy domain name
+- - open aws CloudFront
+- - open created distribution
+|General| / Domain Name          (copy-url)
+- add PRODUCTION_DOMAIN env var as https://<copied-url>
+- - open github repository
+|Settings| / _click'Secrets'(left menu)
+Secrets / _click'New secret'
+    Secrets / New secret / Name = <key-name>
+    Secrets / New secret / Value = <key-value>
+    Secrets / New secret / _click'Add secret'      (line added)
+
