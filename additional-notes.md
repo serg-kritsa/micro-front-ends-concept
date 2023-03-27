@@ -171,6 +171,7 @@ use passed callback function in MemoryHistory navigation listener
 ### container navigation (8080: click on link to subbapp page; 8080: click on header link to home page)
 - declare parent navigation callback
 - implement callback
+- use callback on conainer listening event
 
 
 
