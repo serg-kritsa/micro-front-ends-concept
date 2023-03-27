@@ -164,5 +164,6 @@ use passed callback function in MemoryHistory navigation listener
 ## sync History objects
 - destruct pathname prop from event
 - rename it for better understanding
+- use browser history object
 
 
