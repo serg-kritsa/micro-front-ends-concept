@@ -151,4 +151,7 @@ git push origin container-dev
 git checkout master
 git pull origin master
 
+## fix css class name collision using material-ui
+use createGenerateClassName w/ specified prefix in every subproject
+jss<N> will be replaced by <prefix-name><N> 
 
