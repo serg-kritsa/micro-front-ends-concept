@@ -157,3 +157,6 @@ jss<N> will be replaced by <prefix-name><N>
 
 ## use MemoryHistory in routing
 use passed MemoryHistory object in App component instead of BrowserRouter
+- setup communication between container and subapp
+pass callback function to subapp in options object
+
