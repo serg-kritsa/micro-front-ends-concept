@@ -162,12 +162,13 @@ pass callback function to subapp in options object
 use passed callback function in MemoryHistory navigation listener
 
 ## sync History objects
+### subapp navigation (8080: click on link to subbapp page)
 - destruct pathname prop from event
 - rename it for better understanding
 - use browser history object
-- update browser url after subapp naigation |   |   | one direction communication
+- update browser url after subapp navigation |   |   | one direction communication
 - fix onNavigate undefined error on running in isolation on port 8081
-
+### container navigation (8080: click on link to subbapp page; 8080: click on header link to home page)
 
 
 
