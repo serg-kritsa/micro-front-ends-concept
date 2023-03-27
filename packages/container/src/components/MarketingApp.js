@@ -6,8 +6,8 @@ export default () => {
 
   useEffect(() => {
     mount(ref.current, {
-      onNavigate: () => {
-        console.log('The container noticed navigation in Marketing');
+      onNavigate: ({ pathname: nextPathname }) => {
+        
       },
     });
   });

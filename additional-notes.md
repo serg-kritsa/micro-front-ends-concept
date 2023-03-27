@@ -161,4 +161,8 @@ use passed MemoryHistory object in App component instead of BrowserRouter
 pass callback function to subapp in options object
 use passed callback function in MemoryHistory navigation listener
 
+## sync History objects
+- destruct pathname prop from event
+- rename it for better understanding
+
 
