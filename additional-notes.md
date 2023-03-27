@@ -155,3 +155,5 @@ git pull origin master
 use createGenerateClassName w/ specified prefix in every subproject
 jss<N> will be replaced by <prefix-name><N> 
 
+## use MemoryHistory in routing
+use passed MemoryHistory object in App component instead of BrowserRouter
