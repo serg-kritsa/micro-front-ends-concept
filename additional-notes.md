@@ -173,8 +173,6 @@ use passed callback function in MemoryHistory navigation listener
 - implement callback
 - use callback on conainer listening event
 - fix update browser url on running in isolation on port 8081: 
-1) setup browser history 
-
-
-
+1) setup browser history; 
+2) use it on mounting if provided in isolation as default history
 
