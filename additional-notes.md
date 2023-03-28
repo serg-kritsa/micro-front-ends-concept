@@ -179,3 +179,7 @@ use passed callback function in MemoryHistory navigation listener
 ## add authentication
 `npm start` to run empty subapp in isolation on port 8082
 
+webpack dev config to open pages on localhost in isolation (8080, 8081, 8082) :
+- output.publicPath should end with /
+- output.publicPath port should be equal to devServer.port
+
