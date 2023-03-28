@@ -176,3 +176,4 @@ use passed callback function in MemoryHistory navigation listener
 1) setup browser history; 
 2) use it on mounting if provided in isolation as default history
 
+
