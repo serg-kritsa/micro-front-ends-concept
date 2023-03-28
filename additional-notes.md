@@ -183,3 +183,18 @@ webpack dev config to open pages on localhost in isolation (8080, 8081, 8082) :
 - output.publicPath should end with /
 - output.publicPath port should be equal to devServer.port
 
+## fix direct route access
+404 errors on directly accessing http://localhost:8081/pricing
+1 way - add / before index.html
+devServer: {
+    port: 8082,
+    historyApiFallback: {
+      index: "/index.html",
+    },
+  },
+2 way - use true instead of options
+devServer: {
+    port: 8082,
+    historyApiFallback: true,
+  },
+
