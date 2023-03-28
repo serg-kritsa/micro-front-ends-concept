@@ -198,3 +198,6 @@ devServer: {
     historyApiFallback: true,
   },
 
+## add initial state to memory history
+current path from history object as initial state
+
