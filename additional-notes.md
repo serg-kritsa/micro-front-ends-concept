@@ -176,4 +176,6 @@ use passed callback function in MemoryHistory navigation listener
 1) setup browser history; 
 2) use it on mounting if provided in isolation as default history
 
+## add authentication
+`npm start` to run empty subapp in isolation on port 8082
 
