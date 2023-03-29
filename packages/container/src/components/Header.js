@@ -54,12 +54,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Header({ isSignedIn, onSignOut }) {
+export default function Header({ isSignedIn, onSignOut  }) {
   const classes = useStyles();
 
   const onClick = () => {
-    if (isSignedIn && onSignOut) {
-      onSignOut();
+    if (isSignedIn && onSignOut ) {
+      onSignOut(); 
     }
   };
 
@@ -87,7 +87,7 @@ export default function Header({ isSignedIn, onSignOut }) {
             className={classes.link}
             component={RouterLink}
             to={isSignedIn ? '/' : '/auth/signin'}
-            onClick={onClick}
+            onClick={onClick} 
           >
             {isSignedIn ? 'Logout' : 'Login'}
           </Button>
