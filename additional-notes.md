@@ -211,5 +211,5 @@ pass callback from container & receive it in subapp
 pass callback from subapp & receive it in component
 refactor to receive props in route components which already make use it
 
-
-
+## auth state
+pass new callback to subapp that changes container state
