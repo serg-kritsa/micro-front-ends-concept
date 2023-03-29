@@ -209,6 +209,7 @@ current path from history object as initial state
 ## apps communication
 pass callback from container & receive it in subapp
 pass callback from subapp & receive it in component
+refactor to receive props in route components which already make use it
 
 
 
