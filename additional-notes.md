@@ -213,3 +213,4 @@ refactor to receive props in route components which already make use it
 
 ## auth state
 pass new callback to subapp that changes container state
+pass state prop to container component & react on change inside it 
