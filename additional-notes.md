@@ -206,5 +206,8 @@ current path from history object as initial state
 - wrap Switch component w/ Suspense component where fallback means layout to show on loading
 - check results in Network tab of browser F12 tools
 
+## apps communication
+pass callback from container & receive it in subapp
+
 
 
