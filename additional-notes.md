@@ -203,5 +203,7 @@ current path from history object as initial state
 
 ## lazy loading
 - use lazy function to import on demand & return react component
+- wrap Switch component w/ Suspense component where fallback means layout to show on loading
+- check results in Network tab of browser F12 tools
 
 
