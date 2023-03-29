@@ -201,4 +201,7 @@ devServer: {
 ## add initial state to memory history
 current path from history object as initial state
 
+## lazy loading
+- use lazy function to import on demand & return react component
+
 
