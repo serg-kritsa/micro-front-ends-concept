@@ -232,3 +232,5 @@ to check run npm start & open http://localhost:8083/
 to see subapp page go to http://localhost:8080/dashboard in browser
 refactored BrowserRouter to get access to history object to redirect to /dashboard if logged in
 
+## route access
+way of restriction page access if not logged in
