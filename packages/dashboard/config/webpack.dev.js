@@ -19,6 +19,14 @@ const devConfig = {
     },
   },
   plugins: [
+    new ModuleFederationPlugin({
+      name: 'dashboard',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './DashboardApp': './src/bootstrap',
+      },
+      shared: packageJson.dependencies,
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),

@@ -9,7 +9,16 @@ const prodConfig = {
     filename: '[name].[contenthash].js',
     publicPath: '/dashboard/latest/',
   },
-  plugins: [],
+  plugins: [
+    new ModuleFederationPlugin({
+      name: 'dashboard',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './DashboardApp': './src/bootstrap',
+      },
+      shared: packageJson.dependencies,
+    }),
+  ],
 };
 
 module.exports = merge(commonConfig, prodConfig);
