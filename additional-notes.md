@@ -230,3 +230,5 @@ to check run npm start & open http://localhost:8083/
 
 ## integration to container
 to see subapp page go to http://localhost:8080/dashboard in browser
+refactored BrowserRouter to get access to history object to redirect to /dashboard if logged in
+
