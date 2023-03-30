@@ -223,3 +223,7 @@ module.rules: [{
     test: /\.(png|jpe?g|gif|woff|svg|eot|ttf)$/i, 
     use: [{ loader: 'file-loader' }], 
 }]
+
+## dependency issue
+there should be configured python and c++ build tools. it required for some dependencies (f.e. node-sass)
+to check run npm start & open http://localhost:8083/
