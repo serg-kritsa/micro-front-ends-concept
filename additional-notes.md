@@ -227,3 +227,6 @@ module.rules: [{
 ## dependency issue
 there should be configured python and c++ build tools. it required for some dependencies (f.e. node-sass)
 to check run npm start & open http://localhost:8083/
+
+## integration to container
+to see subapp page go to http://localhost:8080/dashboard in browser
