@@ -214,3 +214,12 @@ refactor to receive props in route components which already make use it
 ## auth state
 pass new callback to subapp that changes container state
 pass state prop to container component & react on change inside it 
+
+## webpack base config
+- list of file extensions
+resolve.extensions: ['.js', '.vue']
+- list of loaders for different file extensions
+module.rules: [{
+    test: /\.(png|jpe?g|gif|woff|svg|eot|ttf)$/i, 
+    use: [{ loader: 'file-loader' }], 
+}]
